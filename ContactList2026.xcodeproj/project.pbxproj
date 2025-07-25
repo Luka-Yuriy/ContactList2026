@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5ABE5D882E33457600D6E5A7 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE5D872E33457600D6E5A7 /* HeaderTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		5ABA10832E2934BD00F0115F /* ContactList2026.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList2026.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ABE5D872E33457600D6E5A7 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -45,6 +50,7 @@
 		5ABA107A2E2934BD00F0115F = {
 			isa = PBXGroup;
 			children = (
+				5ABE5D862E33455700D6E5A7 /* VIews */,
 				5ABA10852E2934BD00F0115F /* ContactList2026 */,
 				5ABA10842E2934BD00F0115F /* Products */,
 			);
@@ -56,6 +62,14 @@
 				5ABA10832E2934BD00F0115F /* ContactList2026.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		5ABE5D862E33455700D6E5A7 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				5ABE5D872E33457600D6E5A7 /* HeaderTableViewCell.swift */,
+			);
+			path = VIews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ABE5D882E33457600D6E5A7 /* HeaderTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -40,8 +40,47 @@ class SectionContactsVIewController: UITableViewController {
         return cell
     }
     
+    
+}
+
+//MARK: - UITableViewDelegate
+extension SectionContactsVIewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
-   
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HeaderCell") as? HeaderTableViewCell
+        let person = persons[section]
+        cell?.nameLabel.text = person.name
+        cell?.surnameLabel.text = person.surname
+        
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        60
+    }
+//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        let fullNameLabel = UILabel(
+//            frame: CGRect(
+//                x: 16,
+//                y: 3,
+//                width: 300,
+//                height: 20
+//            )
+//        )
+//        fullNameLabel.text = persons[section].fullName
+//        fullNameLabel.font = UIFont.boldSystemFont(ofSize: 17)
+//        fullNameLabel.textColor = .white
+//        
+//        let contentView = UIView()
+//        contentView.addSubview(fullNameLabel)
+//        
+//        return contentView
+//    }
+//    
+//    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+//        view.backgroundColor = .gray
+//    }
 }
