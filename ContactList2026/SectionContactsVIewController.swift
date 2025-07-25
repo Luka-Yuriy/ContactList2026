@@ -15,10 +15,6 @@ class SectionContactsVIewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         persons.count
     }
-    
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        persons[section].fullName
-    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         2
